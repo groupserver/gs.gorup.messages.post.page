@@ -19,7 +19,7 @@ import os
 from setuptools import setup, find_packages
 from version import get_version
 
-name = 'gs.group.messages.post.single'
+name = 'gs.group.messages.post.page'
 version = get_version()
 
 with codecs.open('README.rst', encoding='utf-8') as f:
@@ -31,7 +31,7 @@ with codecs.open(os.path.join("docs", "HISTORY.rst"),
 setup(
     name=name,
     version=version,
-    description="The page that shows a single post in a GroupServer Group",
+    description="The page that shows a single post in a GroupServer group",
     long_description=long_description,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
