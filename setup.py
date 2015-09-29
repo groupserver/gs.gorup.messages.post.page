@@ -19,7 +19,7 @@ import os
 from setuptools import setup, find_packages
 from version import get_version
 
-name = 'gs.group.messages.post.base'
+name = 'gs.group.messages.post.single'
 version = get_version()
 
 with codecs.open('README.rst', encoding='utf-8') as f:
@@ -31,7 +31,7 @@ with codecs.open(os.path.join("docs", "HISTORY.rst"),
 setup(
     name=name,
     version=version,
-    description="Posts made to a GroupServer Group",
+    description="The page that shows a single post in a GroupServer Group",
     long_description=long_description,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -46,10 +46,8 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     keywords='groupserver, message, email, post',
-    author='Richard Waid',
-    author_email='richard@onlinegroups.net',
-    maintainer='Michael JasonSmith',
-    maintainer_email='mpj17@onlinegroups.net',
+    author='Michael JasonSmith',
+    author_email='mpj17@onlinegroups.net',
     url='https://github.com/groupserver/{0}/'.format(name),
     license='ZPL 2.1',
     packages=find_packages(exclude=['ez_setup']),
