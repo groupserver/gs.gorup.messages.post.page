@@ -34,7 +34,7 @@ Resources
 - Code repository:
   https://github.com/groupserver/gs.group.messages.post.page/
 - Translations:
-  https://www.transifex.com/projects/p/gs-group-messages-post/
+  https://www.transifex.com/projects/p/gs-group-messages-post-page/
 - Questions and comments to
   http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver

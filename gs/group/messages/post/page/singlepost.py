@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2012, 2013, 2014 OnlineGroups.net and Contributors.
+# Copyright © 2012, 2013, 2014, 2015 OnlineGroups.net and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -31,14 +31,16 @@ class GSPostView(GroupPage):
 
     @Lazy
     def isPublic(self):
-        assert self.groupInfo.groupObj, 'No group in the groupInfo!'
+        if not self.groupInfo.groupObj:
+            raise AttributeError('No group in the groupInfo')
         retval = GroupVisibility(self.groupInfo).isPublic
         assert type(retval) == bool
         return retval
 
     @Lazy
     def messageQuery(self):
-        assert self.context, 'No context for a post!'
+        if not self.context:
+            raise ValueError('No context for a post')
         retval = MessageQuery(self.context)
         assert retval
         return retval

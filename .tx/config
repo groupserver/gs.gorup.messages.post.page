@@ -6,3 +6,9 @@ file_filter = gs/group/messages/post/locales/<lang>/LC_MESSAGES/gs.group.message
 source_lang = en
 type = PO
 
+[gs-group-messages-post-page.gs-group-messages-post-page-pot]
+file_filter = gs/group/messages/post/page/locales/<lang>/LC_MESSAGES/gs.group.messages.post.page.po
+source_file = gs/group/messages/post/page/locales/en/LC_MESSAGES/gs.group.messages.post.page.po
+source_lang = en
+type = PO
+

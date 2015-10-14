@@ -1,6 +1,6 @@
 <div xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-     i18n:domain="gs.group.messages.post"
+     i18n:domain="gs.group.messages.post.page"
      class="gs-group-messages-post-navigation btn-group" role="navigation">
   <a tal:condition="view/relatedPosts/previous_post_id"
      tal:attributes="href view/relatedPosts/first_post_id;

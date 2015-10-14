@@ -13,7 +13,7 @@
 #
 ############################################################################
 from __future__ import absolute_import, unicode_literals
-SUBSYSTEM = 'gs.group.messages.post'
+SUBSYSTEM = 'gs.group.messages.post.page'
 from logging import getLogger
 log = getLogger(SUBSYSTEM)
 from zope.component import getMultiAdapter
@@ -40,9 +40,8 @@ class GSPostTraversal(GroupPage):
                                      name="gspost")()
         except NoIDError as n:  # lint:ok
             u = '{0}/messages/topics.html'.format(self.groupInfo.url)
-            m = 'No post ID in <{0}>. Going to <{1}>'
-            msg = m.format(self.request.URL, u)
-            log.info(msg)
+            m = 'No post ID in <%s>. Going to <%s>'
+            log.info(m, self.request.URL, u)
             uri = to_ascii(u)
             retval = self.request.RESPONSE.redirect(uri)
         return retval

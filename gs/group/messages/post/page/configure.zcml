@@ -21,14 +21,14 @@
     <implements interface="zope.publisher.interfaces.IPublishTraverse" />
   </class>
   <browser:page
-    for="Products.XWFMailingListManager.interfaces.IGSMessagesFolder"
     name="post"
+    for="Products.XWFMailingListManager.interfaces.IGSMessagesFolder"
     class=".traverse.GSPostTraversal"
     permission="zope2.View" />
 
   <browser:page
-    for="Products.XWFMailingListManager.interfaces.IGSMessagesFolder"
     name="gspost"
+    for="Products.XWFMailingListManager.interfaces.IGSMessagesFolder"
     class=".singlepost.GSPostView"
     template="browser/templates/singlepost.pt"
     permission="zope2.Public" />
@@ -41,11 +41,11 @@
     <implements interface=".interfaces.INavLinksContentProvider"/>
   </class>
   <adapter
+    name="groupserver.PostNavLinks"
     for="zope.interface.Interface
          zope.publisher.interfaces.browser.IDefaultBrowserLayer
          zope.interface.Interface"
     factory=".navlinks.NavLinks"
-    provides="zope.contentprovider.interfaces.IContentProvider"
-    name="groupserver.PostNavLinks"/>
+    provides="zope.contentprovider.interfaces.IContentProvider" />
 
 </configure>
