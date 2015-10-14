@@ -62,7 +62,7 @@ setup(
         'zope.browserpage',
         'zope.cachedescriptors',
         'zope.component',
-        'zope.contentprovider'
+        'zope.contentprovider',
         'zope.i18n[compile]',
         'zope.i18nmessageid',
         'zope.interface',
@@ -74,7 +74,7 @@ setup(
         'zope.viewlet',
         'gs.core',
         'gs.group.base',
-        'gs.group.privacy'
+        'gs.group.privacy',
         'Products.XWFMailingListManager',
     ],
     entry_points="""
