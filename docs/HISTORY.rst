@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0.1 (2015-11-12)
+------------------
+
+* Following the updates to the *Share* widget code in
+  `gs.group.messages.post.base`_
+
 1.0.0 (2015-10-14)
 ------------------
 
